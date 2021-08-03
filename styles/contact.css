@@ -1,0 +1,66 @@
+.container_contact {
+    padding-top: 80px;
+    padding-bottom: 45px;
+}
+
+.form_contact {
+    margin-top: 90px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.form_contact_block {
+    flex: 0 1 40%;
+}
+
+.form_contact_block div:last-child {
+    margin-bottom: 0;
+}
+
+.form_item_contact {
+    margin-bottom: 31.81px;
+    color: #BDBDBD;
+    font-size: 14px;
+}
+
+.form_input_contact {
+    line-height: 30px;
+}
+
+#contact_message {
+    height: 200px;
+    resize: none;
+    display: block;
+}
+
+.contact_button {
+    width: 165px;
+    height: 42px;
+    background-color: #EC7979;
+    border: transparent;
+    color: #FFFFFF;
+    font-weight: 400;
+    font-size: 15px;
+    display: block;
+    margin: 69px auto 0;
+    text-transform: capitalize;
+    transition: 0.3s;
+}
+
+.contact_button:hover {
+    background: #FFFFFF;
+    color: #EC7979;
+    border: 1px solid #86878B;
+    cursor: pointer;
+    font-size: 18px;
+    border-color: #EC7979;
+}
+
+@media (max-width: 640px) {
+    .form_contact {
+        flex-direction: column;
+    }
+    div.form_contact div.form_contact_block:last-child {
+        margin-top: 40px;
+    }
+}

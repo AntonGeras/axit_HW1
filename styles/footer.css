@@ -1,0 +1,33 @@
+    footer {
+        background-color: #000000;
+        display: flex;
+        padding-bottom: 15px;
+    }
+    
+    .links {
+        margin: 0;
+        padding: 30px 0 20px;
+        width: 320px;
+        display: flex;
+        justify-content: space-between;
+        list-style-type: none;
+        font-size: 20px;
+    }
+    
+    .links_icon {
+        color: #c5c5c5;
+        }
+    
+    .links_icon i {
+        transition: 1s;
+    }
+    
+    .links_icon i:hover {
+        transform: rotate(360deg);
+        }
+    
+    .footer_copyrigts {
+        font-size: 12px;
+        color: rgba(255, 255, 255, 0.5);
+        text-align: center;
+    }

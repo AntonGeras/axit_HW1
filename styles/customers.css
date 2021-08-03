@@ -1,0 +1,90 @@
+        .container_customers {
+            padding-top: 80px;
+            padding-bottom: 120px;
+        }
+        
+        .review {
+            margin: 67px -15px 0;
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        .review__block {
+            margin: 0 15px;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+        }
+        
+        .review__text {
+            margin: 0;
+            padding: 14px 21px;
+            border-radius: 7px;
+            max-width: 298px;
+            flex-grow: 2;
+            background: #E2E2E2;
+            color: #86878B;
+            font-size: 14px;
+            text-align: center;
+        }
+        
+        .review__text::after {
+            content: '';
+            border-left: 12.04px solid transparent;
+            border-right: 12.04px solid transparent;
+            border-bottom: 12.04px solid #E2E2E2;
+            transform: rotate(-180deg);
+            position: absolute;
+            right: 80%;
+            bottom: 81px;
+        }
+        
+        .review__bottom {
+            margin-top: 22px;
+            display: flex;
+            justify-content: center;
+        }
+        
+        .review__person {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            justify-content: center;
+        }
+        
+        .review__photo {
+            margin-right: 45px;
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        
+        .review__name {
+            color: #333333;
+            font-size: 20px;
+        }
+        
+        .review__job {
+            margin-top: 12px;
+            color: #86878B;
+            font-size: 14px;
+        }
+        
+        @media (max-width: 900px) {
+            .review {
+                margin-top: 30px;
+                flex-wrap: wrap;
+                justify-content: space-around;
+            }
+            .review__block {
+                margin-top: 30px;
+            }
+        }
+        
+        @media (max-width: 670px) {
+            .title__name {
+                text-align: center;
+            }
+        }
+    

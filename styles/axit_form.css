@@ -1,0 +1,179 @@
+    .background-axit {
+        background-image: url("../images/background-axit.png");
+        background-position: center;
+        background-size: cover;
+        position: relative;
+    }
+    
+    .background-axit::before {
+        content: '';
+        width: 100%;
+        height: 100%;
+        display: block;
+        position: absolute;
+        background-color: rgba(0, 0, 0, 0.55);
+    }
+    
+    .container_axit {
+        padding-top: 110px;
+        padding-bottom: 100px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .axit_block {
+        max-width: 545px;
+        position: relative;
+    }
+    
+    .axit_logo {
+        font-family: 'Raleway', 'Lato', sans-serif;
+        color: #FFFFFF;
+        font-size: 60px;
+        text-transform: uppercase;
+    }
+    
+    .axit_logo::after {
+        content: 'it';
+        color: #EC7979;
+    }
+    
+    .axit_title {
+        margin: 32px 0 0;
+        font-family: 'Raleway', 'Lato', sans-serif;
+        color: #FFFFFF;
+        font-size: 36px;
+        font-weight: 400;
+        text-transform: uppercase;
+    }
+    
+    .axit_title::after {
+        content: '';
+        margin: 46px 0 0;
+        width: 64px;
+        height: 1px;
+        display: block;
+        background-color: #FFFFFF;
+    }
+    
+    .axit_text {
+        margin: 39px 0 0;
+        max-width: 282px;
+        font-family: 'Raleway', 'Lato', sans-serif;
+        color: rgba(255, 255, 255, 0.8);
+        font-weight: 300;
+        font-size: 16px;
+    }
+    
+    .axit_button {
+        margin-top: 39px;
+        display: block;
+        line-height: 17px;
+    }
+    
+    .form_box {
+        width: 370px;
+    }
+    
+    .form_content {
+        padding: 15px 60px 60px;
+        border-radius: 8px 8px 0 0;
+        position: relative;
+        background-color: #FFFFFF;
+    }
+    
+    .form_title {
+        margin-bottom: 60px;
+        font-size: 20px;
+        font-weight: bold;
+        text-align: center;
+    }
+    
+    .title_free {
+        color: #EC7979;
+    }
+    
+    .form_item {
+        margin-bottom: 19px;
+        width: 100%;
+        color: #BDBDBD;
+        font-size: 14px;
+    }
+    
+    div.form_content div:last-child {
+        margin-bottom: 0;
+    }
+    
+    .form_input {
+        border-bottom: 1px solid #BDBDBD;
+        width: 100%;
+        display: block;
+    }
+    
+    .form_button {
+        border: transparent;
+        border-radius: 0px 0px 8px 8px;
+        width: 100%;
+        height: 54px;
+        position: relative;
+        z-index: 3;
+        background-color: #EC7979;
+        color: #FFFFFF;
+        font-size: 15px;
+        font-weight: 600;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+    
+    .form_button:hover {
+        border-top: 1px solid #BDBDBD;
+        background-color: #FFFFFF;
+        color: #EC7979;
+        font-size: 18px;
+        transition: 0.3s;
+    }
+    
+    @media (max-width: 940px) {
+        .container_axit {
+            padding-top: 60px;
+            padding-bottom: 50px;
+            flex-direction: column;
+        }
+        .axit_block {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            max-width: 800px;
+        }
+        .axit_title {
+            text-align: center;
+            font-size: 26px;
+        }
+        .axit_title::after {
+            margin: 20px auto 0;
+        }
+        .axit_text {
+            max-width: 800px;
+            text-align: center;
+        }
+        .axit_button {
+            margin-bottom: 60px;
+        }
+    }
+    
+    @media (max-width: 700px) {
+        .form_box {
+            width: 300px;
+        }
+    }
+    
+    @media (max-width: 450px) {
+        .axit_title {
+            font-size: 20px;
+        }
+        .axit_text {
+            font-size: 12px;
+        }
+    }
